@@ -16,11 +16,11 @@ public class BracketBalancing {
 			if(stack.isEmpty()) { 
 				return false;
 			}
-			
-      switch (ch) {
+			switch (ch) {
 			case '}':
 				if(stack.pop() != '{') {
-				  return false;
+					
+					return false;
 				}
 				break;
 			case ']':
@@ -39,4 +39,6 @@ public class BracketBalancing {
 		}				
 		return (stack.isEmpty());
 	}
+
+
 }
